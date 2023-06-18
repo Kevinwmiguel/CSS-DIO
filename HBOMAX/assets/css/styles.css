@@ -1,0 +1,562 @@
+/*Import*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+body{
+    font-family: 'Raleway';
+}
+/*root*/
+:root {
+    --primary-color: #020228;
+    --secondary-color: #ff00e5;
+    --tertiary-color: #b535f6;
+    --btn-bg-color-gradient: linear-gradient(
+      45deg,
+      #9b34ef 0%,
+      #490cb0 20%,
+      transparent 50%
+    );
+    --btn-link-bg-color: #fff;
+    --btn-link-color: #000;
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --divider-bg-color: linear-gradient(
+      90deg,
+      #5516ba,
+      rgba(255, 0, 229, 0.5) 80%
+    );
+    
+    --text-color: #fff;
+    --link-color: #9e86ff;
+    --form-bg-color: rgba(211, 211, 211, 0.06);
+    --form-field-bg-color: rgba(0, 0, 0, 0.2);
+    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+    --form-field-placeholder: rgba(255, 255, 255, 0.7);
+    --form-field-error: rgb(255, 76, 76);
+
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--tertiary-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+/*Reset*/
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+nav {
+    position: fixed;
+    height: 55px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #020228;
+    align-items: center;
+    
+}
+
+.logo{
+    margin-left: 15px;
+}
+.btn button{
+    margin-right: 50px;
+    border-radius: 30px; 
+}
+
+.logos{
+    
+    width: 494px;
+    height: 58px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login{
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 1500px;
+}
+
+.subscribe{
+    background-color: #b535f6;
+    color: #fff;
+    transition: 1s;
+    border: none;
+    height: 35px;
+    font-size: 1rem;
+    
+    font-weight: bold;
+    width: 180px;
+}
+.subscribe:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/*main*/
+
+.foreveryone h1 .everyone{
+    font-size: 48px;
+}
+.foreveryone h1{
+    margin: 25px;
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.foreveryone h1 span{
+    font-weight: bold;
+    font-size: 52px;    
+}
+.foreveryone p span{
+    font-weight: bold;
+    font-size: 52px;    
+}
+.foreveryone p {
+    font-weight: 200;
+    font-size: 18px;   
+    width: 300px;
+    text-align: center;
+    margin: 25px;
+}
+
+.foreveryone .price {
+    font-size: 20px;
+}
+.foreveryone .price span {
+    font-size: 40px;
+}
+
+.foreveryone{
+    color: #fff;
+    display: flex;
+    font-size: 30px;
+    background: linear-gradient(-60deg, #3E1042, #020228, #3221ca);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 400% 400%;
+    animation: foreveryone 7s infinite alternate ;
+    padding: 100px 0px 300px 0px;
+    text-align: center;
+    padding: 100px 0px 300px 0px;
+    
+}
+
+.div_bar{
+    height: 7px;
+    border-radius: 10px;
+    width: 700px;
+    margin: 40px;
+    background: linear-gradient(
+        90deg,
+        #5516ba,
+        rgba(255, 0, 229, 0.5) 80%);
+}
+
+.price-plan{
+    width: 300px;
+}
+
+.subscribe-sanime{
+    background: linear-gradient(
+        45deg,
+        #9b34ef 0%,
+        #490cb0 20%,transparent 95%
+      );
+    border: none;
+    padding: 16px 40px 16px 40px;
+    margin: 15px;
+    animation: subscribe 1.5s infinite alternate;
+    color: #fff;
+    font-family: 'Raleway';
+    font-weight: 700;
+    width: 243px;
+    letter-spacing: 4px;
+    border-radius: 500px;
+    
+
+}
+.subscribe-sanime:hover{
+    filter: brightness(1.1);
+    cursor: pointer;
+    transition: 1s;
+    background:none;
+    border: 2px solid #ff00e5;
+}
+
+/*Plans*/ 
+.plans {
+    background-image: url(/assets/img/background-movies-series.png),linear-gradient(60deg, #020228, #020228);
+    background-size: cover;
+    color: white;
+    perspective: 100;
+    
+}
+
+.plans-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 2000px;
+    perspective-origin: top;
+}
+.card {
+    background-color: rgba(58, 30, 98, 0.5);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 40px 60px;
+    width: 416px;
+    height: 520px;
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d;
+}
+
+.mobile {
+    background-color: rgba(58, 30, 98, 0.5);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 40px 60px;
+    width: 416px;
+    height: 520px;
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d;
+    perspective: 100;
+}
+
+
+.card-content, .card-content{
+    display: flex;
+    justify-content: space-between;
+    perspective: 100;
+    
+}
+.card-content h2, .card-content h2, .card-content span, .card-content span{
+    font-weight: bold;
+    font-size: 1.6rem;   
+}
+
+.card-content p span, .card-content p span{
+    color: #F828E4;
+    
+}
+
+.mobile ul li::before, .multidevices ul li::before{
+    content: "+";
+    font-size: 35px;
+    margin-right: 10px;
+}
+.mobile ul, .multidevices ul{
+    width: 416px;
+    height: 328px;
+    list-style: none;
+    margin-left: -60px;
+}
+.mobile li, .multidevices li{
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 600;
+    
+    height: 55px;
+}
+
+.mobile button{
+    background: linear-gradient(90deg, #852DDE, #4520A9, #2E146D);
+    width: 400px;
+    color: #fff;
+    font-weight: bold;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 35px;
+    
+}
+.multidevices button{
+    background: linear-gradient(90deg, #852DDE, #4520A9, #2E146D);
+    width: 400px;
+    color: #fff;
+    font-weight: bold;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 35px;
+}
+.mobile button:hover{
+    border: #ff00e5 2px solid;
+    animation: button 0.3s forwards ease;
+    
+}
+.multidevices button:hover{
+    animation: button 0.3s forwards ease;
+    border: #ff00e5 1px solid;
+}
+
+.multidevices {
+    background-color: rgba(58, 30, 98, 0.5);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 40px 60px;
+    perspective: 100;
+    width: 416px;
+    height: 520px;
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d;
+}
+
+.plans-content:has(.mobile:nth-child(1):hover)
+  .multidevices:nth-child(2) {
+  transform: rotateY(-45deg);
+  transition: 1.5s;
+}
+
+.plans-content:has(.multidevices:nth-child(2):hover)
+  .mobile:nth-child(1) {
+  transform: rotateY(45deg);
+  transition: 1.5s;
+}
+
+.plans-title{
+    margin: 0;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.plans-title h2{
+    width: 1350px;
+    font-size: 35px;
+}
+
+/*new-universe*/
+.series{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    gap: 60px;
+}
+
+.new-universe{
+    background-color: #020327;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 5px;
+    justify-content: center;
+    color: #fff;
+    height: 1350px;
+}
+.new-universe h2{
+    margin: 2.5rem;
+    font-size: 2rem;
+}
+
+#cnimg:hover{
+    background-image: url(../assets/img/CN-Hover.png);
+    cursor: pointer;
+}
+
+.series div{
+    width: 353px;
+    height: 530px;
+    background-size: cover;
+}
+#hboimg{
+    background-image: url(../img/hbo-default_0.webp);
+}
+#hboimg:hover{
+    transition: 2s;
+    transform: scale(1.1);
+    background-image: url(../img/hbo-hover_0.webp);
+}
+#maximg{
+    background-image: url(../img/MAX-Default.webp);
+}
+#maximg:hover{
+    transition: 2s;
+    transform: scale(1.1);
+    background-image: url(../img/MAX-Hover.webp);
+}
+#dcimg{
+    background-image: url(../img/DC_Default.webp);
+}
+#dcimg:hover{
+    transition: 2s;
+    transform: scale(1.1);
+    background-image: url(../img/DC-Hover.webp)
+}
+#wbimg{
+    background-image: url(../img/WB-Default.webp);
+}
+#wbimg:hover{
+    transition: 2s;
+    transform: scale(1.1);
+    background-image: url(../img/WB-Hover.webp);
+}
+#cnimg{
+    background-image: url(../img/CN-Default.webp);
+}
+#cnimg:hover{
+    transition: 2s;
+    transform: scale(1.1);
+    background-image: url(../img/CN-Hover.png);
+}
+#climg{
+    background-image: url(../img/UCL-Default.webp);
+}
+#climg:hover{
+    transition: 2s;
+    transform: scale(1.1);
+    background-image: url(../img/UCL-Hover.webp);
+}
+
+/*Footer*/
+footer{
+    color: #9E86FF;
+    background-color: #020327;
+    height: 250px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.help{
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    justify-content: space-between;
+}
+.help a{
+    color: var(--forth-color);
+    text-decoration: none;
+    
+    margin: 50px 0px 15px 0px;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+}
+.social img{
+    margin: 100px 30px 20px 30px;
+}
+
+.license{
+    font-size: 12px;
+}
+/*keyframes*/
+
+@keyframes foreveryone{
+    0% {
+        background-position:  40% 60%;
+    }
+    50%{
+        background-position:  80% 50%;
+    }
+    
+    100% {
+        background-position:  40% 60%;
+    }
+}
+@keyframes subscribe{
+    0% {
+        transform: rotate(0);
+    }
+    15%{
+        transform: rotate(-15deg);
+    }
+
+    20%{
+        transform: rotate(10deg);
+    }
+    25%{
+        transform: rotate(-10deg);
+    }
+    30%{
+        transform: rotate(10deg);
+    }
+    35%{
+        transform: rotate(-10deg);
+    }
+    40%,100% {
+        transform: rotate(0px);
+    }
+}
+
+@keyframes button {
+    0%{
+        background: linear-gradient(90deg, #852DDE, #4520A9, #2E146D);
+        transform: scale(1);
+    }
+    10%{
+        background: linear-gradient(90deg, #852DDE, #4520A9, #2E146D);
+        transform: scale(1.01);
+    }
+    
+    20%{
+        background: linear-gradient(90deg, #852DDE, #4520A9, #120735);
+        transform: scale(1.01);
+
+        
+    }
+    30%{
+        background: linear-gradient(90deg, #852DDE, #4520A9, #120735);
+        transform: scale(1.02);
+ 
+    }
+    
+    40%{
+        background: linear-gradient(90deg, #852DDE, #4520A9, #120735);
+        transform: scale(1.02);
+    }
+    50%{
+        background: linear-gradient(90deg, #852DDE, #120735, #120735);
+        transform: scale(1.03);
+
+    }
+    60%{
+        background: linear-gradient(90deg, #852DDE, #120735, #120735);
+        transform: scale(1.03); 
+
+    }
+    70%{
+        background: linear-gradient(90deg, #852DDE, #120735, #120735);
+        transform: scale(1.04);
+
+    }
+    80%{
+        background: linear-gradient(90deg, #120735, #120735, #120735);
+        transform: scale(1.04);
+
+    }
+    90%{
+        background: linear-gradient(90deg, #120735, #120735, #120735);
+        transform: scale(1.05);
+    }
+    100%{
+        background: linear-gradient(90deg, #120735, #120735, #120735);
+        transform: scale(1.05);
+    }
+}

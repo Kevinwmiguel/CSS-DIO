@@ -1,0 +1,240 @@
+/*Import*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+:root {
+    --primary-color: #020228;
+    --secondary-color: #ff00e5;
+    --tertiary-color: #b535f6;
+    --btn-bg-color-gradient: linear-gradient(
+      45deg,
+      #9b34ef 0%,
+      #490cb0 20%,
+      transparent 50%
+    );
+    --forth-color: #9E86FF;
+    --btn-link-bg-color: #fff;
+    --btn-link-color: #000;
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --divider-bg-color: linear-gradient(
+      90deg,
+      #5516ba,
+      rgba(255, 0, 229, 0.5) 80%
+    );
+    
+    --text-color: #fff;
+    --link-color: #9e86ff;
+    --form-bg-color: rgba(211, 211, 211, 0.06);
+    --form-field-bg-color: rgba(0, 0, 0, 0.2);
+    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+    --form-field-placeholder: rgba(255, 255, 255, 0.7);
+    --form-field-error: rgb(255, 76, 76);
+
+    scroll-behavior: smooth;
+}
+
+/*Reset*/
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+
+/*header*/
+nav {
+    height: 55px;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #020228;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 15px;
+}
+.btn button{
+    margin-right: 50px;
+    border-radius: 30px; 
+}
+
+.logos{
+    
+    width: 494px;
+    height: 58px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login{
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 1500px;
+}
+
+.subscribe{
+    background-color: #b535f6;
+    color: #fff;
+    transition: 1s;
+    border: none;
+    height: 35px;
+    font-size: 1rem;
+    
+    font-weight: bold;
+    width: 180px;
+}
+.subscribe:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/*Main*/
+main{
+    background-image: url(/assets/img/background-movies-series.png),linear-gradient(90deg, #020228 20% , #020228, #020228 20%);;
+    background-size: cover;
+    height: 662px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/*container-form*/
+.container-form{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    border-radius: 10px;
+    width: 750px;
+    background-color: rgba(133, 45, 222,0.1);
+    filter: brightness(1.1);
+}
+.container-form h2{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+}
+.container-form label{
+    font-size: 14px;
+    margin-left: 25px;
+}
+
+/*form-content*/
+.form-input{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.form-input input{
+    height: 40px;
+    margin: 20px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background: none;
+    color: #fff;
+    padding-left: 25px;
+}
+input::placeholder{
+    padding-left: 15px;
+    color: #cccccc9c;
+    font-size: 1rem;
+}
+
+input[type="password"]:valid {
+    border: 1px solid white;
+}
+input[type="email"]:valid {
+    border: 1px solid white;
+}
+  
+input[type="password"]:invalid {
+    border: 1px solid red;
+}
+input[type="email"]:invalid {
+    border: 1px solid red;
+}
+
+.login-form-button{
+    background: linear-gradient(90deg, #852DDE, #4520A9, #2E146D);
+    width: 150px;
+    color: #fff;
+    font-weight: bold;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    margin-left: 35px;
+    margin-top: 25px;
+}
+.login-form-button:hover{
+    cursor: pointer;
+    
+    border: #ff00e5 1px solid;
+    animation: button 1s infinite;
+}
+.forget-pass{
+    background: none;
+    border: none;
+    color: var(--forth-color);
+}
+
+/*Footer*/
+footer{
+    color: #9E86FF;
+    background-color: #020327;
+    height: 250px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.help{
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    justify-content: space-between;
+}
+.help a{
+    color: var(--forth-color);
+    text-decoration: none;
+    
+    margin: 50px 0px 15px 0px;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+}
+.social img{
+    margin: 100px 30px 20px 30px;
+}
+
+.license{
+    font-size: 12px;
+}
+
+@keyframes button {
+    0%{
+        background: linear-gradient(80deg, #120735, #120735);
+        transform: scale(1)}
+    100%{
+        background: linear-gradient(90deg, #120735, #120735);
+        transform: scale(1.05);
+    }
+}
