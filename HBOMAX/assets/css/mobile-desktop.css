@@ -1,0 +1,116 @@
+@media screen and (max-width: 395px) {
+    
+    body{
+        margin: 0;
+        padding: 0;
+        width: 390px;
+        box-sizing: border-box;
+    }
+    header{
+        width: 100%;
+    }
+    nav{
+        width: 390px;
+        height: 100px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo{
+        margin: 15px auto 20px auto;
+    }
+
+    .container-form{
+        width: 370px;
+    }
+
+    
+    .forget-pass{
+        background: none;
+        border: none;
+        color: var(--forth-color);
+    }
+
+    .login{
+        width: 168px;
+       
+        margin-left: 25px;
+    }
+    .btn{
+        width: 390px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+   
+    .btn-2 .login-form-button{
+        margin-left: 0;
+    }
+    .forget-pass{
+        margin-left: 0;
+    }
+
+    
+    .btn-2{
+        display: flex;
+        
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .series{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        gap: 60px;
+        width: 390px;
+    }
+    footer{
+        color: #9E86FF;
+        background-color: #020327;
+        height: 450px;
+        width: 390px;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .help{
+        font-weight: bold;
+        font-size: 16px;
+        display: flex;
+        width: 390px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .help a{
+        color: var(--forth-color);
+        text-decoration: none;
+        margin: 15px;
+    }
+    .social{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-content: center;
+    }
+    .social img{
+        margin: 100px 30px 20px 30px;
+    }
+    
+    .license{
+        font-size: 12px;
+        margin-top: 25px;
+        width: 390px;
+        text-align: center;
+    }
+
+    
+}

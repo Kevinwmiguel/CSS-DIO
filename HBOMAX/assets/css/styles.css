@@ -63,8 +63,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     background-color: #020228;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 .logo{

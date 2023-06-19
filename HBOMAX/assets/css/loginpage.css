@@ -97,7 +97,7 @@ nav {
 
 /*Main*/
 main{
-    background-image: url(assets/img/background-movies-series.png),linear-gradient(90deg, #020228 20% , #020228, #020228 20%);;
+    background-image: url(/assets/img/background-movies-series.png),linear-gradient(90deg, #020228 20% , #020228, #020228 20%);
     background-size: cover;
     height: 662px;
     display: flex;
@@ -239,14 +239,3 @@ footer{
     }
 }
 
-@media screen and (max-width: 480px) {
-    body {
-      height: auto;
-    }
-  
-    .btn button {
-      display: block;
-      margin-bottom: 24px;
-    }
-  
-}
