@@ -1,6 +1,7 @@
 ![image](https://github.com/Kevinwmiguel/CSS-DIO/assets/59360014/72b6bf81-c0a5-4f7f-87d9-6c1e5b877d2f)
 
 <h1 align="center">Site HBO Max</h1>
+Pode acessar aqui: https://kevinwmiguel.github.io/CSS-DIO/HBOMAX/
 <h4 align="center">Clone com modificações</h4>
 
 <p align="center">
