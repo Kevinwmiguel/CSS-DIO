@@ -5,5 +5,5 @@
 https://kevinwmiguel.github.io/CSS-DIO/HBOMAX/
 
 <a href="https://www.dio.me/certificate/9A5FF068/share">
-  
+  <img src="9A5FF068.webp"> 
 </a>
