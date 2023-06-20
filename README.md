@@ -5,7 +5,7 @@
 ## 📎 Projets
 
 - <a href="https://kevinwmiguel.github.io/CSS-DIO/HBOMAX/" >HBOMAX</a>
-- <a href="https://kevinwmiguel.github.io/CSS-DIO/Discord%20Responsive/" > Discord Responsivo </a>
+- <a href="https://kevinwmiguel.github.io/CSS-DIO/Discord%20Responsive/" > Discord Responsive </a>
 - <a href="https://kevinwmiguel.github.io/CSS-DIO/LandingPage-Dio/" > LandingPage </a>
 - <a href="https://kevinwmiguel.github.io/CSS-DIO/Youtube%20Grid/" > Youtube Grid </a>
 - <a href="https://kevinwmiguel.github.io/Youtube%20Clone/" > Youtube Clone </a>
