@@ -122,3 +122,128 @@
         color: #fff;
     }
 }
+
+@media screen and (max-width: 414px)
+{
+    body{
+        margin: 0;
+        padding: 0;
+        width: 408px;
+        box-sizing: border-box;
+    }
+    header{
+        width: 100%;
+    }
+    nav{
+        width: 408px;
+        height: 100px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo{
+        margin: 15px auto 20px auto;
+    }
+
+    .container-form{
+        width: 389px;
+    }
+
+    
+    .forget-pass{
+        background: none;
+        border: none;
+        color: var(--forth-color);
+    }
+
+    .login{
+        width: 168px;
+       
+        margin-left: 25px;
+    }
+    .btn{
+        width: 408px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+   
+    .btn-2 .login-form-button{
+        margin-left: 0;
+    }
+    .forget-pass{
+        margin-left: 0;
+    }
+
+    
+    .btn-2{
+        display: flex;
+        
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .series{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        gap: 60px;
+        width: 390px;
+    }
+    footer{
+        color: #9E86FF;
+        background-color: #020327;
+        height: 450px;
+        width: 408px;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .help{
+        font-weight: bold;
+        font-size: 16px;
+        display: flex;
+        width: 408px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .help a{
+        color: var(--forth-color);
+        text-decoration: none;
+        margin: 15px;
+    }
+    .social{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-content: center;
+    }
+    .social img{
+        margin: 100px 30px 20px 30px;
+    }
+    
+    .license{
+        font-size: 12px;
+        margin-top: 25px;
+        width: 408px;
+        text-align: center;
+    }
+
+    main{
+        background-image: linear-gradient(90deg, #020228 20% , #020228, #020228 20%);
+        background-size: cover;
+        height: 662px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+}
