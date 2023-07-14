@@ -203,7 +203,7 @@ nav {
 
 /*Plans*/ 
 .plans {
-    background-image: url(/assets/img/background-movies-series.png),linear-gradient(60deg, #020228, #020228);
+    background-image: URL(../img/background-movies-series.png),linear-gradient(60deg, #020228, #020228);
     background-size: cover;
     color: white;
     perspective: 100;
